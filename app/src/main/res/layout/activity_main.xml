@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_salvar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="@+id/btn_update"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_update"
+        app:layout_constraintTop_toBottomOf="@+id/btn_update" />
+
+    <Button
+        android:id="@+id/btn_listar_todos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Listar todos"
+        app:layout_constraintEnd_toEndOf="@+id/btn_delete"
+        app:layout_constraintStart_toStartOf="@+id/btn_delete"
+        app:layout_constraintTop_toBottomOf="@+id/btn_delete" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="@+id/btn_listar_todos"
+        app:layout_constraintStart_toStartOf="@+id/btn_listar_todos"
+        app:layout_constraintTop_toBottomOf="@+id/btn_listar_todos" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#E91E63"
+        android:text="Excluir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_id" />
+
+    <EditText
+        android:id="@+id/edit_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Digite o Id"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_finalizados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="finalizados"
+        app:layout_constraintEnd_toEndOf="@+id/btn_salvar"
+        app:layout_constraintStart_toStartOf="@+id/btn_salvar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_salvar" />
+
+    <Button
+        android:id="@+id/btn_busca_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="Buscar por Id"
+        app:layout_constraintEnd_toEndOf="@+id/btn_finalizados"
+        app:layout_constraintStart_toStartOf="@+id/btn_finalizados"
+        app:layout_constraintTop_toBottomOf="@+id/btn_finalizados" />
+
+    <ImageView
+        android:id="@+id/image_galeria"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/btn_busca_id"
+        app:layout_constraintTop_toBottomOf="@+id/btn_busca_id"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/button_image_galeria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Galeria"
+        app:layout_constraintStart_toEndOf="@+id/image_galeria"
+        app:layout_constraintTop_toTopOf="@+id/image_galeria" />
+
+    <Button
+        android:id="@+id/button_image_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Câmera"
+        app:layout_constraintEnd_toEndOf="@+id/button_image_galeria"
+        app:layout_constraintStart_toStartOf="@+id/button_image_galeria"
+        app:layout_constraintTop_toBottomOf="@+id/button_image_galeria" />
+</androidx.constraintlayout.widget.ConstraintLayout>
